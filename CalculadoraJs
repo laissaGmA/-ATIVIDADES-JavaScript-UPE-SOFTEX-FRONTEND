@@ -1,0 +1,23 @@
+console.log("Olá, vamos iniciar o programa da calculadora BS para você.")
+var Numero1 = prompt("Digite um número: ");
+var Numero2 = prompt("Digite outro número: ");
+var sistema = prompt("De acordo com a operação que você queria executar digite um dos operadores lógicos: soma (+), subtração (-), multiplicação (*) ou divisão(/)");
+
+
+if (sistema == "+") {
+    resultado = Number(Numero1) + Number(Numero2);
+    console.log("O resultado da soma foi: ", resultado);
+}
+else if (sistema == "-") {
+    resultado = Number(Numero1) - Number(Numero2);
+    console.log("O resultado da subtração foi: ", resultado);
+}
+else if (sistema == "*") {
+    resultado = Number(Numero1) * Number(Numero2);
+    console.log("O resultado da multiplicação foi: ", resultado);
+}
+else {
+    resultado1 = (Number(Numero1) / Number(Numero2));
+    resultado2 = (Number(Numero1) % Number(Numero2));
+    console.log("O resultado da divisão foi: ", resultado1, "E o resto da operação é igual a: ", resultado2);
+}
