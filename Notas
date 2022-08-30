@@ -1,0 +1,18 @@
+console.log("Vamos começar a execução do sistema de notas da escola: ")
+var Nota1 = parseInt(prompt("Digite sua primeira nota: "));
+var Nota2 = parseInt(prompt("Digite sua segunda nota: "));
+var Nota3 = parseInt(prompt("Digite sua terceira nota: "));
+var In = Nota1 + Nota2 + Nota3;
+let media = In/3;
+//O valor da média deve ser maior ou igual a 6 para que o aluno seja considerado aprovado
+let Situacao = ( media <= 6 )? "Reprovado" : "Aprovado";
+console.log("O Aluno está: ", Situacao);
+
+console.log("--------------------------Parte 2------------------------")
+
+console.log("Descubra qual nota você deve tirar na próxima prova para poder passar com nota 7: ")
+var Nota1 = parseInt(prompt("Digite sua primeira nota: "));
+var Nota2 = parseInt(prompt("Digite sua segunda nota: "));
+var In = Nota1 + Nota2;
+var Nfaltante = 21 - In
+console.log("Você deve tirar",Nfaltante,"para ser aprovado com média 7");
