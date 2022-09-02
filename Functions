@@ -1,0 +1,25 @@
+function DataDeHoje(){
+    return new Date();
+}
+DataDeHoje();
+
+
+console.log('--------------------------Ficha de compra---------------------')
+
+function compra(valor, cliente = 'Pedro'){
+    console.log("Cliente:",cliente);
+    console.log("O valor da compra foi de:",valor)
+ }
+compra(45);
+
+
+console.log("Lista de compras:")
+var itens = [
+    'arroz',
+    'feijão',
+    'macarrão',
+    'café' 
+];
+itens.map((itens) => {
+    return itens;
+  });
