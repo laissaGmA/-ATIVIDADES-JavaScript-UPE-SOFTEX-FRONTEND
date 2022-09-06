@@ -1,0 +1,33 @@
+var Banco = new Object();
+Banco.conta = "2569";
+Banco.saldo = 500;
+Banco.TipodeConta = "Conta corrente";
+Banco.agencia = "0052";
+Banco.BuscarSaldo = function() {
+  console.log("Seu saldo atual é de: " + this.saldo);
+};
+Banco.Deposito = function(valor = 90) {
+    this.saldo +=  valor
+    console.log('Você fez um depósito de: '  + valor)
+    console.log('Seu saldo atual é de: ' + "R$"+this.saldo);
+};
+Banco.Saque = function(valor2 = 60) {
+    this.saldo = this.saldo - valor2
+    console.log('Você fez um saque de: '  + valor2)
+    console.log('Seu saldo atual é de: ' + "R$"+this.saldo);
+};
+Banco.NumeroDaConta = function() {
+    console.log("O número da sua conta é : " + this.conta);
+};
+console.log('-----------Verificação de Saldo---------')
+Banco["BuscarSaldo"]()
+console.log('----------------------------------------')
+console.log('----------Verificação de Depósito-------')
+Banco["Deposito"]()
+console.log('----------------------------------------')
+console.log('-----------Verificação de Saque---------')
+Banco["Saque"]()
+console.log('----------------------------------------')
+console.log('------Verificação de Número da conta----')
+Banco["NumeroDaConta"]()
+console.log('----------------------------------------')
