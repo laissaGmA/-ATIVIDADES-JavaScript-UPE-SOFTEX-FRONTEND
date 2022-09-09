@@ -1,0 +1,26 @@
+function Livro(titulo, categoria, id) {
+    this.titulo = titulo;
+    this.categoria = categoria;
+    this.id = id;
+  };
+  
+  function propriedades(obj){
+    return Object.keys(obj);
+  };
+  
+var livrosdisponiveis = [
+    'A culpa é das estrelas',
+    'Senhor dos anéis',
+    'Game of thrones', 
+];
+
+console.log('Livros disponiveis: ')
+Object.keys(livrosdisponiveis).forEach(function(item) {
+    console.log(item + '-' + livrosdisponiveis[item]);
+});
+
+console.log('Livro inserido: ')
+  estante = new Livro("The Handmaid's Tale", "Ficção especulativa", "0003");
+
+  console.log(propriedades(estante));
+  console.log(Object.values(estante));
